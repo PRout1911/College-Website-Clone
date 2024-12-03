@@ -1,0 +1,604 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+/*---------------------------------------blue nav------------------------------------------------*/
+.blue-nav{
+    background-color: #004170;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.blue-nav .left{
+    flex-basis: 10%;
+}
+.blue-nav .right{
+    padding-top: 20px;
+    flex-basis: 90%;
+}
+.right h3{
+    color: white;
+    font-family: monospace;
+}
+.right h1{
+    font-family: 'Playfair-Display';
+    color: rgb(30, 207, 239);
+}
+.right h1 span{
+    font-size: 22px;
+    font-family: 'Roboto';
+    color: aqua;
+}
+.right p{
+    font-size: 12px;
+    color: white;
+}
+/*-----------------------------------------light blue nav---------------------------------------------*/
+.lightblue-nav{
+    background-color: rgb(30, 207, 239);
+}
+.lightblue-nav ul{
+    display: inline-flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    list-style: none;
+}
+.lightblue-nav ul li{
+    display: inline-block;
+    position: relative;
+}
+.lightblue-nav ul li a{
+    display: block;
+    padding: 3px 3px;
+    color: #004170;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    margin: 3px 9px;
+}
+.lightblue-nav ul li a:hover{
+    color: white;
+}
+/*-------------------------------------------------------*/
+.dropdown{
+    width: 150px;
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+.dropdown i{
+    color: white;
+}
+.dropdown ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+.dropdown ul li a:hover{
+    background-color: white;
+    color: black;
+}
+ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    background: #004170;
+}
+ul li:hover .dropdown ul{
+    display: block;
+}
+.dropdown:hover{
+    display: block;
+}
+.dropdown, .dropdown1, .dropdown2, 
+.dropdown3, .dropdown4, .dropdown5{
+    z-index: 2;
+}
+/*----------------------------About--------------------------------*/
+.dropdown .dropdown-1{
+    width: 180px;
+    top: 0;
+    display: none;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+.dropdown .dropdown-1 a
+, .dropdown-1 ul li .dropdown-2 a
+, .dropdown-1 ul li .dropdown-3 a
+, .dropdown .dropdown-1 .dropdown-3 ul li .dropdown-4 a
+, .dropdown ul li .dropdown-5 a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+.dropdown ul li .dropdown-1 a:hover
+, .dropdown-1 ul li .dropdown-2 a:hover
+, .dropdown-1 ul li .dropdown-3 a:hover
+, .dropdown .dropdown-1 .dropdown-3 ul li .dropdown-4 a:hover
+, .dropdown ul li .dropdown-5 a:hover{
+    background-color: white;
+    color: black;
+}
+.dropdown ul li:hover .dropdown-1{
+    display: block;
+    position: absolute;
+    background: #004170;
+    left: 120px;
+}
+.dropdown ul li:hover .dropdown-1 ul{
+    display: block;
+}
+/*-------------------------------------------------------------*/
+ .dropdown-1 .dropdown-2{
+    width: 50%;
+    top: 0;
+    display: none;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+ .dropdown-1 ul li:hover .dropdown-2{
+    display: block;
+    position: absolute;
+    background: #004170;
+    left: 170px;
+}
+ .dropdown-1 ul li:hover .dropdown-2 ul{
+    display: block;
+}
+/*------------------------------------------------------------*/
+.dropdown-1 .dropdown-3{
+    width: 95%;
+    top: 0;
+    display: none;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+.dropdown-1 ul li:hover .dropdown-3{
+    display: block;
+    position: absolute;
+    background: #004170;
+    left: 130px;
+}
+.dropdown-1 ul li:hover .dropdown-3 ul{
+    display: block;
+}
+/*-------------------------------------------------------------*/
+.dropdown .dropdown-1 .dropdown-3 .dropdown-4{
+    width: 90%;
+    top: 0;
+    display: none;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);   
+}
+.dropdown .dropdown-1 .dropdown-3 ul li:hover .dropdown-4{
+    display: block;
+    position: absolute;
+    background: #004170;
+    left: 120px; 
+}
+.dropdown .dropdown-1 .dropdown-1 ul li:hover .dropdown-3 ul{
+    display: block;
+}
+/*--------------------------------------------------------------*/
+.dropdown .dropdown-5{
+    width: 135%;
+    top: 0;
+    display: none;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+.dropdown ul li:hover .dropdown-5{
+    display: block;
+    position: absolute;
+    background: #004170;
+    left: 120px;
+}
+.dropdown ul li:hover .dropdown-5 ul{
+    display: block;
+}
+/*-----------------------------Imp links------------------------------------*/
+.dropdown1{
+    width: 65%;
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+.dropdown1 i{
+    color: white;
+}
+.dropdown1 ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+.dropdown1 ul li a:hover{
+    background-color: white;
+    color: black;
+}
+ul li:hover .dropdown1{
+    display: block;
+    position: absolute;
+    background: #004170;
+}
+ul li:hover .dropdown1 ul{
+    display: block;
+}
+.dropdown1:hover{
+    display: block;
+}
+/*------------------------------------------------------------------*/
+.dropdown1 .dropdown1-1{
+    width: 160%;
+    top: 0;
+    display: none;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+.dropdown1 ul li .dropdown1-1 a,
+.dropdown1 ul li .dropdown1-2 a,
+.dropdown1 ul li .dropdown1-3 a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+.dropdown1 ul li .dropdown1-1 a:hover,
+.dropdown1 ul li .dropdown1-2 a:hover,
+.dropdown1 ul li .dropdown1-3 a:hover{
+    background-color: white;
+    color: black;
+}
+.dropdown1 ul li:hover .dropdown1-1{
+    display: block;
+    position: absolute;
+    background: #004170;
+    left: 85px;
+}
+.dropdown1 ul li:hover .dropdown1-1 ul{
+    display: block;
+}
+/*--------------------------------------------------------------*/
+.dropdown1 .dropdown1-2{
+    width: 200%;
+    top: 0;
+    display: none;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+.dropdown1 ul li:hover .dropdown1-2{
+    display: block;
+    position: absolute;
+    background: #004170;
+    left: 80px;
+}
+.dropdown1 ul li:hover .dropdown1-2 ul{
+    display: block;
+}
+/*----------------------------------------------------------------*/
+.dropdown1 .dropdown1-3{
+    width: 100%;
+    top: 0;
+    display: none;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+.dropdown1 ul li:hover .dropdown1-3{
+    display: block;
+    position: absolute;
+    background: #004170;
+    left: 110px;
+}
+.dropdown1 ul li:hover .dropdown1-3 ul{
+    display: block;
+}
+/*-------------------------------Academics-----------------------------------*/
+.dropdown2{
+    width: 90%;
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+.dropdown2 i{
+    color: white;
+    float: inline-end;
+}
+.dropdown2 ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+.dropdown2 ul li a:hover{
+    background-color: white;
+    color: black;
+}
+ul li:hover .dropdown2{
+    display: block;
+    position: absolute;
+    background: #004170;
+}
+ul li:hover .dropdown2 ul{
+    display: block;
+}
+.dropdown2:hover{
+    display: block;
+}
+/*--------------------------------------------------------------*/
+.dropdown2 .dropdown2-1{
+    width: 170%;
+    top: 0;
+    display: none;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+.dropdown2 ul li .dropdown2-1 a,
+.dropdown2 ul li .dropdown2-2 a,
+.dropdown2 ul li .dropdown2-3 a,
+.dropdown2 ul li .dropdown2-4 a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+.dropdown2 ul li .dropdown2-1 a:hover,
+.dropdown2 ul li .dropdown2-2 a:hover,
+.dropdown2 ul li .dropdown2-3 a:hover,
+.dropdown2 ul li .dropdown2-4 a:hover{
+    background-color: white;
+    color: black;
+}
+.dropdown2 ul li:hover .dropdown2-1{
+    display: block;
+    position: absolute;
+    background: #004170;
+    left: 80px;
+}
+.dropdown2 ul li:hover .dropdown2-1 ul{
+    display: block;
+}
+/*----------------------------------------------------------------*/
+.dropdown2 .dropdown2-2{
+    width: 120%;
+    top: 0;
+    display: none;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+.dropdown2 ul li:hover .dropdown2-2{
+    display: block;
+    position: absolute;
+    background: #004170;
+    left: 95px;
+}
+.dropdown2 ul li:hover .dropdown2-2 ul{
+    display: block;
+}
+/*--------------------------------------------------------------*/
+.dropdown2 .dropdown2-3{
+    width: 120%;
+    top: 0;
+    display: none;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+.dropdown2 ul li:hover .dropdown2-3{
+    display: block;
+    position: absolute;
+    background: #004170;
+    left: 105px;
+}
+.dropdown2 ul li:hover .dropdown2-3 ul{
+    display: block;
+}
+/*----------------------------------------------------------*/
+.dropdown2 ul li .dropdown2-4{
+    width: 270%;
+    top: 0;
+    display: none;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+.dropdown2 ul li:hover .dropdown2-4{
+    display: block;
+    position: absolute;
+    background: #004170;
+    left: 80px;
+}
+.dropdown2 ul li:hover .dropdown2-4 ul{
+    display: block;
+}
+/*-------------------------------------research--------------*/
+.dropdown3{
+    width: 150%;
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+.dropdown3 i{
+    color: white;
+}
+.dropdown3 ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+.dropdown3 ul li a:hover{
+    background-color: white;
+    color: black;
+}
+ul li:hover .dropdown3{
+    display: block;
+    position: absolute;
+    background: #004170;
+}
+ul li:hover .dropdown3 ul{
+    display: block;
+}
+.dropdown3:hover{
+    display: block;
+}
+/*---------------------------------student corner------------------*/
+.dropdown4{
+    width: 80%;
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+.dropdown4 i{
+    color: white;
+}
+.dropdown4 ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+.dropdown4 ul li a:hover{
+    background-color: white;
+    color: black;
+}
+ul li:hover .dropdown4{
+    display: block;
+    position: absolute;
+    background: #004170;
+}
+ul li:hover .dropdown4 ul{
+    display: block;
+}
+.dropdown4:hover{
+    display: block;
+}
+/*---------------------------------------------------------*/
+.dropdown4 .dropdown4-1{
+    width: 80%;
+    top: 0;
+    display: none;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+.dropdown4 ul li .dropdown4-1 a,
+.dropdown4 ul li .dropdown4-2 a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+.dropdown4 ul li .dropdown4-1 a:hover,
+.dropdown4 ul li .dropdown4-2 a:hover{
+    background-color: white;
+    color: black;
+}
+.dropdown4 ul li:hover .dropdown4-1{
+    display: block;
+    position: absolute;
+    background: #004170;
+    left: 110px;
+}
+.dropdown4 ul li:hover .dropdown4-1 ul{
+    display: block;
+}
+/*--------------------------------------------------*/
+.dropdown4 .dropdown4-2{
+    width: 105%;
+    top: 0;
+    display: none;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+.dropdown4 ul li:hover .dropdown4-2{
+    display: block;
+    position: absolute;
+    background: #004170;
+    left: 105px;
+}
+.dropdown4 ul li:hover .dropdown4-2 ul{
+    display: block;
+}
+/*-------------------------contact------------------------------*/
+.dropdown5{
+    width: 100%;
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+.dropdown5 i{
+    color: white;
+}
+.dropdown5 ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+.dropdown5 ul li a:hover{
+    background-color: white;
+    color: black;
+}
+ul li:hover .dropdown5{
+    display: block;
+    position: absolute;
+    background: #004170;
+}
+ul li:hover .dropdown5 ul{
+    display: block;
+}
+.dropdown3:hover{
+    display: block;
+}

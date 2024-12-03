@@ -1,0 +1,235 @@
+#border-text{
+    padding: 15px 15px;
+    font-family: 'Roboto';
+    justify-content: center;
+    text-align: center;
+}
+.container{
+    display: flex;
+}
+.border-text{
+    border: 1px solid black;
+    flex: 7;
+    margin-right: 20px;
+    padding-top: 7px;
+    font-size: 16px;
+}
+.text .text-1{
+    animation: smooth-blink 0.7s infinite;
+    transition: color 0.5s ease-in-out;
+    margin-left: 10px;
+    flex: 3;
+    font-weight: bolder;
+    font-size: 14px;
+}
+.text-1:hover{
+    text-decoration: underline;
+}
+@keyframes smooth-blink{
+    0%, 100%{color: black;}
+    20%{color: red;}
+    75%{color: red;}
+}
+.text::before, .text::after
+,.container-1::before, .container-1::after
+,marquee .first::before, marquee .second::after
+,.text-links .first::before, .text-links .second::after
+,.text-links .third::before, .text-links .fourth::after{
+    content: "\2605";
+    font-size: 19px;
+    animation: star-blink 0.5s infinite;
+    margin-right: 0;
+}
+@keyframes star-blink{
+    0%, 100%{color: lightgrey;}
+    20%{color: #004170;}
+}
+.container-1{
+    float: right;
+    padding-bottom: 15px;
+}
+.container-1 .text-2{
+    font-weight: bolder;
+    color: #0675c4;
+    font-size: 14px;
+}
+.text-2:hover{
+    text-decoration: underline;
+    color: #004170;
+}
+/* ----------------------------- */
+.marquee-div{
+    z-index: 1;
+}
+marquee a{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: #0675c4;
+    z-index: 1;
+}
+span{
+    color: red;
+}
+marquee .first:hover
+,marquee .second:hover
+,.text-links .first:hover
+,.text-links .second:hover
+,.text-links .third:hover
+,.text-links .fourth:hover{
+    color: #004170;
+    text-decoration: underline;
+}
+/* --------------------------- */
+.text-links{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+.text-links a{
+    color: #0675c4;
+}
+.text-links p{
+    font-size: 16.5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    color: #004170;
+    line-height: 1.5;
+}
+/* ------------------------ */
+#middle{
+    padding: 10px 25px;
+    display: flex;
+}
+#middle .content{
+    width: 350px;
+    height: 300px;
+    background-color: #004170;
+    border-bottom: 3px solid white;
+}
+#middle .content img{
+    color: white;
+    font-size: 25px;
+}
+#middle .content p{
+    color: white;
+    font-size: 18px;
+    padding-left: 10px;
+    font-style: italic;
+    text-align: center;
+}
+/* --------------------------------- */
+#middle .container{
+    position: relative;
+    padding-left: 15px;
+}
+#middle .container .wrapper{
+    width: 50vw;
+    height: 370px;
+    overflow: hidden;
+}
+#middle .container .wrapper-holder{
+    display: grid;
+    grid-template-columns: repeat(12, 100%);
+    height: 100%;
+    width: 100%;
+    animation: slider 30s ease-in-out infinite alternate;
+}
+#middle .container #slider-1{
+    background-image: url(1.jpeg);
+    background-position: center;
+}
+#middle .container #slider-2{
+    background-image: url(2.jpeg);
+    background-position: center;
+}
+#middle .container #slider-3{
+    background-image: url(3.jpg);
+    background-position: center;
+}
+#middle .container #slider-4{
+    background-image: url(4.jpg);
+    background-position: center;
+}
+#middle .container #slider-5{
+    background-image: url(5.jpg);
+    background-position: center;
+}
+#middle .container #slider-6{
+    background-image: url(6.jpg);
+    background-position: center;
+}
+#middle .container #slider-7{
+    background-image: url(7.jpeg);
+    background-position: center;
+}
+#middle .container #slider-8{
+    background-image: url(8.jpg);
+    background-position: center;
+}
+#middle .container #slider-9{
+    background-image: url(9.jpg);
+    background-position: center;
+}
+#middle .container #slider-10{
+    background-image: url(10.jpeg);
+    background-position: center;
+}
+#middle .container #slider-11{
+    background-image: url(11.jpeg);
+    background-position: center;
+}
+#middle .container #slider-12{
+    background-image: url(12.jpeg);
+    background-position: center;
+}
+#middle .container .button-holder .button{
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: .3rem;
+}
+#middle .button-holder{
+    position: absolute;
+    left: 45%;
+    bottom: 0%;
+}
+@keyframes slider{
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-100%);}
+    30%{transform: translateX(-200%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%);}
+    60%{transform: translateX(-300%);}
+    70%{transform: translateX(-300%);}
+    80%{transform: translateX(-300%);}
+    90%{transform: translateX(0%);}
+    100%{transform: translateX(0%);}
+}
+/* --------------------------- */
+.portal{
+    padding-left: 15px;
+    font-size: 22px;
+    text-align: center;
+}
+.portal a{
+    color: #004170;
+}
+.port1, .port2, .port3, .port4
+,.port5, .port6, .port7, .port8
+,.port9, .port10{
+    width: 290px;
+    height: 22px;
+    margin-bottom: 8px;
+    font-weight: bolder;
+}
+.port1, .port3, .port5, .port7, .port9{
+    background-color: #ebf4f5;
+}
+.port2, .port4, .port6, .port8, .port10{
+    background-color: #ccddf7;
+}
